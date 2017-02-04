@@ -1,17 +1,53 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Sorteio WebVR</title>
-	<script src="static/puglins/aframe.min.js"></script>
-	<meta charset="utf-8">
-	<style type="text/css" href="static/css/style.css"></style>
-</head>
-<body>
-	<center> <h1>Web VR - #CPBR10 </h1>
-	<h2>Exemplo Básico de WebVR para sorteio na CPBR10</h2>
-  </center>
-  <center> <iframe width="80%" height="400px" allowfullscreen="yes" scrolling="no" allowvr="yes" src="webvr.html" "></iframe>
-  </center>
-  <div class="a-enter-vr" aframe-injected=""><button class="a-enter-vr-button" aframe-injected=""></button></div>
-</html>
 
+<html>
+  <head>
+    <title>WebVR - CPBR10</title>
+    <meta name="description" content="Text Anchors - A-Frame">
+   <script src="static/puglins/aframe.min.js"></script>
+   <script src="https://unpkg.com/aframe-text-component@^0.4.1/dist/aframe-text-component.min.js"></script> 
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
+    </a-assets>
+ 
+    <a-entity position= "-8.5 5 -5" material="color: white;" text="text:  Web VR - #CPBR10" scale = ".5 .5 .5 "></a-entity>
+    <a-entity position= "-8.5 4.5 -5" material="color: white;" text="text:  Exemplo Basico de WebVR para sorteio na CPBR" scale = ".5 .5 .5 "></a-entity>
+   <a-entity rotation="0 0 0" position="" scale="" visible="true">
+    <a-box color="#0099FF" position="0 2.5 -5" rotation="0 0 0" scale="1 3 1" visible="" material="" geometry=""></a-box>
+    <a-box color="#0099FF" position="1 4 -5" rotation="0 0 0" scale="3 1 1" visible="" material="" geometry=""></a-box>
+    <a-box color="#0099FF" position="1 0.5 -5" rotation="0 0 0" scale="3 1 1" visible="" material="" geometry=""></a-box>
+  </a-entity>
+  <!-- C -->
+  <!-- P -->
+  <a-entity rotation="0 -82.50592249883854 0" position="0.18 0 -4.02" scale="1 1 1" visible="true">
+    <a-box color="#0099FF" position="4 2.25 -5" rotation="0 0 0" scale="1 4.5 1" visible="" material="" geometry=""></a-box>
+    <a-box color="#0099FF" position="5.5 4 -5" rotation="0 0 0" scale="2 1 1" visible="" material="" geometry=""></a-box>
+    <a-box color="#0099FF" position="6 3 -5" rotation="0 0 0" scale="1 1 1" visible="" material="" geometry=""></a-box>
+    <a-box color="#0099FF" position="5.5 2 -5" rotation="0 0 0" scale="2 1 1" visible="" material="" geometry=""></a-box>
+  </a-entity>
+  <!-- P -->
+  <!-- B -->
+   <a-entity rotation="0 -179.9087476710785 0" position="9.33 0 0" scale="1 1 1" visible="true">
+    <a-box color="#0099FF" position="8 2.25 -5" rotation="0 0 0" scale="1 4.5 1" visible="" material="" geometry=""></a-box>
+    <a-box color="#0099FF" position="10 .5 -5" rotation="0 0 0" scale="3 1 1" visible="" material="" geometry=""></a-box>
+    <a-box color="#0099FF" position="9.5 4 -5" rotation="0 0 0" scale="2 1 1" visible="" material="" geometry=""></a-box>
+    <a-box color="#0099FF" position="10 3 -5" rotation="0 0 0" scale="1 1 1" visible="" material="" geometry=""></a-box>
+    <a-box color="#0099FF" position="9.5 2 -5" rotation="0 0 0" scale="2 1 1" visible="" material="" geometry=""></a-box>
+    <a-box color="#0099FF" position="11 2 -5" rotation="0 0 0" scale="1 2 1" visible="" material="" geometry=""></a-box>
+  </a-entity>
+  <!-- B -->
+  <!-- R -->
+  <a-entity rotation="0 93.965078401455 0" position="1.49 0 9.25" scale="1 1 1" visible="true">
+    <a-box color="#0099FF" position="8 2.25 -5" rotation="0 0 0" scale="1 4.5 1" visible="" material="" geometry=""></a-box>
+    <a-box color="#0099FF" position="10 4 -5" rotation="0 0 0" scale="1 1 1" visible="true" material="color:#0099FF" geometry="primitive:box"></a-box>
+    <a-box color="#0099FF" position="9 3 -5" rotation="0 0 0" scale="1 1 1" visible="true" material="color:#0099FF" geometry="primitive:box"></a-box>
+  </a-entity> 
+  <!-- R -->
+
+
+    <a-sky color="#0E3B56"></a-sky>
+    </a-scene>
+  </body>
+</html>
