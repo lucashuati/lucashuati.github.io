@@ -1,0 +1,97 @@
+
+/* ALL */
+.serv-title {
+    font-size: 30pt;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/*pericia*/
+
+.pericia-bg {
+    color: white;
+    background-color: #336699;
+}
+
+.pericia h2{
+    font-size: 30pt;
+    text-align:center;
+}
+
+.tit{
+    text-align: left !important;
+    margin-bottom: 30px; 
+}
+
+.pericia li{
+    padding-top: 3px;
+    font-size: 16pt;
+    /*list-style-type: square;*/
+    /*list-style-type: decimal;*/
+    padding-right: 3px;
+}
+.pericia li:first-child {
+    padding-top: 20px;
+}
+.tipo-per{
+    font-weight: 300;
+    border-style: solid;
+    margin-bottom: 20px;
+    height: 360px;
+    margin-bottom: 40px;
+}
+.tit-pericia {
+    /*border: 1px solid black;*/
+    position: absolute;
+    width: 354px;
+    top: -40px;
+}
+
+.tipo-per h2{
+    display: inline-block;
+    float: left;
+    padding: 0 10px;
+    background-color: #336699;
+    font-size: 22pt;
+    font-weight: 400;
+}
+
+/*cosultoria*/
+
+.cons{
+    margin-bottom: 20px;
+}
+
+
+.cons p{
+    font-size: 16pt;
+     font-weight: 300;
+}
+
+
+
+/*Avaliação*/
+.bg-aval {
+    color: white;
+}
+
+.aval p{
+    font-size: 16pt;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.bg-aval {
+    background-color: #336699;
+}
+
+/* Recuperação */
+
+.rec{
+    margin-bottom: 20px;
+}
+
+.rec p{
+    font-size: 16pt; 
+     font-weight: 300;   
+}

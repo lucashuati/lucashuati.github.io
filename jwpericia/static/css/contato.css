@@ -1,0 +1,58 @@
+.form{
+    /*margin-top: 20px;  */
+    margin-bottom: 20px;
+}
+
+.adress{
+    margin-top: 87px;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 30pt;
+    margin-bottom: 20px;
+}
+
+input{
+    border: 1px solid;
+    width: 90%;
+    padding: 10px;
+    color: white;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color : #336699;
+}
+
+#submit{
+    float: right;
+    width:auto;
+    margin-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+    border : 3px solid black;
+    color: white;
+    font-size : 18pt;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 2px 25px;
+}
+
+textarea{
+    border: 1px solid;
+    width: 90%;
+    height: 300px;
+    padding: 10px;
+    color: white;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: #336699;
+    
+}
+
+.submt .lala{
+    float: right;
+    margin-right: 15px;
+    /*margin-left: 50px;*/
+}
+

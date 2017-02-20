@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    color: black;
+}
+/* ALL */
+
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    margin: 20px;
+    float: left;
+    border: 3px solid black;
+}
+
+.jcarousel img {
+    display: block;
+    max-width: 100%;
+    height: auto !important;
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background: #425370;
+    color: #000;
+    text-decoration: none;
+    font-size: 35pt;
+    cursor: pointer;
+
+}
+
+.jcarousel-control-prev {
+    left: 15px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.jcarousel-control-next {
+    right: 15px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.jcarousel-control-prev i,
+.jcarousel-control-next i{
+    display: block;
+    margin-top: -4px;
+}
+
+.jcarousel-control-next i{
+    margin-left: 5px;
+}
+
+.jcarousel-control-prev i{
+    margin-right: 5px;
+}
+
+.jcarousel-control-prev:hover,
+.jcarousel-control-next:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+/** Carousel Pagination **/
+
+.jcarousel-pagination {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    margin: 0;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+
+    font-size: 11px;
+    height: 10px;
+    width: 10px;
+    line-height: 10px;
+
+    background: #fff;
+    color: #4E443C;
+    border-radius: 10px;
+    text-indent: -9999px;
+
+    margin-right: 7px;
+
+
+    -webkit-box-shadow: 0 0 2px #4E443C;
+    -moz-box-shadow: 0 0 2px #4E443C;
+    box-shadow: 0 0 2px #4E443C;
+}
+
+.jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+
+    -webkit-box-shadow: 0 0 2px #F0EFE7;
+    -moz-box-shadow: 0 0 2px #F0EFE7;
+    box-shadow: 0 0 2px #F0EFE7;
+}
+
+.but{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.but-txt{
+    background-color: #336699;
+    border : 3px solid black;
+    color: white;
+    font-size : 18pt;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 2px 25px;
+    
+    
+}
+
+.but-rol{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    margin-top: -300px;
+}
+
+.but-roll{
+    float: left;
+    margin-left: -20px;
+    padding-left: 0;
+}
+
+.but-rolr{
+    float: right;
+    margin-right: 10px;
+    padding-right: 0;
+}
+
+
+.but-txt1{
+    background-color: black;
+    border : 3px solid white;
+    color: white;
+}
+
+.but.txt2{
+    background-color: #336699;
+    border : 3px solid black;
+    color: white;
+}
+
+/* Header */
+
+.logo {
+    margin-bottom: 10px; 
+}
+.header {
+    font-weight: bold;
+    padding: 20px 0px;
+    padding-bottom: 0px;
+}
+
+.header:after {
+
+    content: '';
+    display: block;
+    width: 3000px;
+    margin-left: -900px; 
+    height: 1.5px;
+    background: gray;
+
+}
+.menu {
+    margin-top: 15px;
+    font-size: 20pt;
+    padding: 0px;
+}
+
+.menu ul {
+    float: right;
+}
+.menu ul li {
+    padding: 5px;
+    padding-top: 0px;
+}
+
+.menu ul li a{
+    color: black;
+}
+
+.menu ul li a:hover{
+    background-color: white;
+    color: #2c4e86;
+}
+
+/* Painel */
+
+.painel {
+    position: absolute;
+    background-image: url("../../assets/images/index/bg-painel-1.png");
+    background-repeat:no-repeat; 
+    background-size: cover;
+}
+
+.fade-slider {
+    position: relative;
+    width: 100%;
+    
+}
+.texting {
+    color: white;
+}
+
+.texting h1{
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    text-align: center;
+    font-size: 55pt;
+}
+
+.texting-p{
+    padding: 10px;
+    background-color: rgba(0,0,0,.8);
+    text-align: center;
+    font-size: 20pt;
+    color: white;
+}
+
+.active {
+    display: block;
+}
+/* Quem Somos */
+
+.quem-somos {
+    padding: 0px 0;
+}
+
+.quem-somos h2{
+    padding-bottom: 10px;
+}
+
+.quem-somos-img{
+    padding-left : 0px;
+    
+}
+
+.quem-somos-img img{
+    /*border: 4px solid black;*/
+}
+.quem-somos-txt{
+    font-size: 18.5pt;
+    font-weight: 300;
+}
+
+/* Servicos */
+
+.serv{
+    background-color: #336699;
+    
+}
+
+.painel-serv li{
+    height: 360px;
+}
+
+.painel-serv li h3{
+    margin: 0px;
+    font-size: 25pt;
+    text-align: center;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+.trabalhista {
+    background-image: url("../../assets/images/index/pericia-trabalhista-bg.png");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+
+/* CONTATO */
+
+.contact h2{
+    font-size: 26pt;
+}
+
+.adress p{
+    font-weight: 300;
+}
+.adress h3 {
+    
+    margin-top: 0px; 
+}
+
+.adress h3:after {
+    content: '';
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 1px;
+}
+
+.p-er{
+    font-size: 16pt;
+}
+
+.p-end{
+   font-size: 16pt; 
+}
+
+/* FOOTER */
+.rodape{
+    background-color: #336699;
+    color: white;
+    font-weight: 300;   
+}
+
+.rodape h2{
+    font-size: 26pt;
+}
+
+.footer-end p{
+    font-size: 14pt;
+}
+
+
+.inf{
+    font-size: 16pt;
+}
+
+
+
+.links p {
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.links p:last-child {
+    padding-top: 20px;
+}
+.links i {
+    font-size: 20pt;
+}
+
+.links a {
+    color: white;
+}
+.links a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+#rf, #tj {
+    padding-top: 5px;
+}
+.copy {
+    padding-top: 10px;
+    background-color: #2c4e86;
+}
+
+.second-line {
+    margin-top: 15px;
+}
+
+/*
+.inf a {
+    color: white;
+}*/
