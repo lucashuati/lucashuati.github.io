@@ -21,13 +21,22 @@
 
 	.tipo-per h2 {
 		margin-left: 5px;
-	}
-
+	} 
     .tabe{
         height: auto;
-        margin-right: 10%;
-        margin-left: 10%;
+        width: auto;
     }
+    #submit{
+    	margin-right: 45px;    
+	}
+	.adress {
+		margin-top: 20px;
+	}
+	.but-contato {
+		padding-left: 0px;
+   		padding-right: 15px; 
+	}
+
 }
 
 /* Tablet */
@@ -54,10 +63,60 @@
     
     .tabe{
         height: auto;
-        margin-right: 10%;
-        margin-left: 10%;
+        width: auto;
     }
 
+    .imag {
+    	margin-top: 10px;
+    }
+    .tit-pericia {
+    	top: -20px;
+ 	}
+ 	#submit{
+    	margin-right: 50px;    
+	}
+	.adress {
+		margin-top: 20px;
+	}
+	.but-contato {
+   		padding-left: 0px; 
+	}
+
+	
+}
+
+/* Medium PC */
+@media (min-width: 992px) and (max-width: 1199px) { 
+	.espe_t p{
+    	font-size: 12.5pt;
+	}
+
+	.equipe-control-prev {
+    	left: 55px;
+	}
+
+	.equipe-control-next {
+	    right: 55px;
+	} 
+	.tabe{
+    	margin: 20px 40px;
+    }
+    #submit{
+    	float: right;
+    	margin-right: 25px;    
+	}
+	.equipe-control-prev {
+	    left: -35px;
+	}
+
+	.equipe-control-next {
+	    right: -35px;
+	}
+	.equipe {
+		height: 500px;
+	}
+	
+}
 
 #menu-drop {
 	font-size: 20pt;
@@ -80,4 +139,44 @@
 #menu-drop ul{
 	list-style: none;
 	margin: 0px;
+}
+
+.funcionario-responsive h3, .funcionario-responsive h2{
+	text-align: center;
+}
+.funcionario-responsive ul{
+	list-style: none;
+}
+
+.contato-responsive ul li{
+	margin: 0 5px; 
+	display: block;
+	float: left;
+}
+
+.contato-responsive ul{
+	padding: 0 75px;
+}
+
+.email-responsive ul{
+	text-align:center;
+	margin-left: -25px;
+}
+
+.saiba-responsive {
+	text-align:center; 
+}
+
+#mini-curriculo, #mini-curriculo-2 {
+	text-align:justify;
+}
+
+.saiba-responsive a {
+	text-decoration:none;
+	margin-left: 0px;
+	margin-bottom: 20px;: 
+}
+
+.saiba-responsive a:active {
+	color:red;
 }

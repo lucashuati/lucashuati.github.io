@@ -4,36 +4,38 @@
         <meta charset="utf-8">
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   
+        <meta name="description" content=" JW Perícia, Consultoria e Contabilidade possui facilidade de comunicação e dialogo, gostou de algum serviço ou tem alguma duvida? Entre em contato conosco.">
+        <title>Contato | JW Perícia</title>
+
+        <script src="static/js/jquery.js"></script>
+        <link rel="stylesheet" href="static/css/bootstrap.css">
+        <script src="static/js/bootstrap.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="static/css/style.css">
         <link rel="stylesheet" type="text/css" href="static/css/contato.css">
         <link rel="stylesheet" type="text/css" href="static/css/responsive.css">
     </head>
     <body>
-        <div class="container">
-            <header class="row header">
-                <div id="menu-logo" class="col-md-4 col-xs-6 col-sm-6 col-lg-4">
-                    <a href="index.html"><img class="img img-responsive logo" src="assets/images/index/Logo-jwpericia.png" alt="Logo JW Pericia"></a>   
-                </div>
-                <nav class="menu-responsive hidden-md hidden-lg col-xs-offset-4 col-xs-2 col-sm-offset-4 col-sm-2 ">
-                    <a href="#menu-drop" data-toggle="collapse"><img style="width: 80%;" src="assets/images/icons/menu-512.png"> </a>
-                </nav>
-                <nav class="col-md-offset-1 col-md-7 menu hidden-xs hidden-sm">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="quem-somos.html">Quem Somos</a></li>
-                        <li><a href="servicos.html">Serviços</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                    </ul>
-                </nav>
-            </header>
+        <div class="menu-bg">
+            <div class="container">
+                <header class="row header">
+                    <div id="menu-logo" class="col-md-4 col-xs-6 col-sm-6 col-lg-4">
+                        <a href="index.html"><img class="img img-responsive logo" src="assets/images/index/Logo-jwpericia.png" alt="Logo JW Pericia"></a>   
+                    </div>
+                    <nav class="menu-responsive hidden-md hidden-lg col-xs-offset-4 col-xs-2 col-sm-offset-4 col-sm-2 ">
+                        <a href="#menu-drop" data-toggle="collapse"><img style="width: 80%;" src="assets/images/icons/menu-512.png"> </a>
+                    </nav>
+                    <nav class="col-md-offset-1 col-md-7 menu hidden-xs hidden-sm">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="quem-somos.html">Quem Somos</a></li>
+                            <li><a href="servicos.html">Serviços</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
         </div>
         <div id="menu-drop" class="collapse">
             <ul>
@@ -64,7 +66,7 @@
                             <textarea name = "message" placeholder="Digite aqui sua mensagem"></textarea>
                         </p>
                         
-                            <input id="submit" name="submit" type="submit" value="Enviar">
+                            <input class="but-txt col-xs-3 col-sm-3 col-md-3" id="submit" name="submit" type="submit" value="Enviar">
                         
                     </form>
                 </div>
@@ -119,8 +121,12 @@
                 </div>
             </div>
         </div>
-        <div class="row copy">
-            <center><p>Desenvolvido por Lucas e Mauro</p></center>
+        <div class="copy">
+           <div class="container">
+                <div class="row">
+                    <center><p>Desenvolvido por Lucas e Mauro</p></center>
+                </div> 
+            </div> 
         </div>
     </body>
     <script src="static/js/scripts.js"></script>

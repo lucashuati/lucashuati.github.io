@@ -14,8 +14,6 @@ $(document).ready(function(){
 		$(".painel").width(window_width);
 		$(".texting h1").css("padding-top", painel_height*.25 + "px");
 	}
-	
-
 	var currentSlide = 0;
 	var nextSlide = 1;
 	var painel = $(".painel");
@@ -26,8 +24,8 @@ $(document).ready(function(){
 		var currentPainel = $(painel[currentSlide]);
 		var nextPainel = $(painel[nextSlide]);
 		var imageUrl = ["assets/images/index/bg-painel-1.png",
-						"assets/images/index/bg-painel-2.png",
-						"assets/images/index/bg-painel-3.png"];
+						"assets/images/index/bg-painel-2.jpg",
+						"assets/images/index/bg-painel-3.jpg"];
 		nextPainel.css('background-image', 'url(' + imageUrl[nextSlide] + ')');			
 
 		var interval = 4000;
@@ -40,29 +38,29 @@ $(document).ready(function(){
 
 
 	// Float Center
-	floatCenter();
-	$(window).resize(floatCenter);
-	function floatCenter(){
-		if($(window).width() > 992){
-			var title_box = $(".tipo-per h2");
-			var div_box = $(".tit-pericia");
-			for(var i = 0; i < title_box.length; i++ ){
-				var title = $(title_box[i]);
-				var div = $(div_box[i]);
-				var rest_div = div.width() - title.width();
-				var padding = parseInt(title.css("padding-right"));
-				title.css("margin-left", " " + (rest_div/2) - padding + "px");
-			}		
-		}else {
-			var title_box = $(".tipo-per h2");
-			for(var i = 0; i < title_box.length; i++ ){
-				var title = $(title_box[i]);
-				title.css("margin-left", 5);
-			}	
+	// floatCenter();
+	// $(window).resize(floatCenter);
+	// function floatCenter(){
+	// 	if($(window).width() > 992){
+	// 		var title_box = $(".tipo-per h2");
+	// 		var div_box = $(".tit-pericia");
+	// 		for(var i = 0; i < title_box.length; i++ ){
+	// 			var title = $(title_box[i]);
+	// 			var div = $(div_box[i]);
+	// 			var rest_div = div.width() - title.width();
+	// 			var padding = parseInt(title.css("padding-right"));
+	// 			title.css("margin-left", " " + (rest_div/2) - padding + "px");
+	// 		}		
+	// 	}else {
+	// 		var title_box = $(".tipo-per h2");
+	// 		for(var i = 0; i < title_box.length; i++ ){
+	// 			var title = $(title_box[i]);
+	// 			title.css("margin-left", 5);
+	// 		}	
 			
-		}
+	// 	}
 		
-	}
+	// }
 	
 	
 	//Responsive

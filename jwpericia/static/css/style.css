@@ -26,12 +26,19 @@ body {
     margin: 20px;
     float: left;
     border: 3px solid black;
+    cursor: pointer;
 }
 
 .jcarousel img {
     display: block;
     max-width: 100%;
     height: auto !important;
+}
+
+.jcarousel-wrapper a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
 }
 
 /** Carousel Controls **/
@@ -155,6 +162,18 @@ body {
     
 }
 
+.but-txt:hover {
+    border: 3px solid #336699;
+    background-color: black;
+    color: white;
+}
+
+.but-txt1:hover {
+    border: 3px solid black;
+    background-color: white;
+    color: #336699;
+}
+
 .but-rol{
     height: 50px;
     width: 50px;
@@ -189,6 +208,15 @@ body {
 
 /* Header */
 
+.menu-bg:after{
+    content: '';
+    width: auto;
+    display: block;
+    height: 1.5px;
+    background: gray;
+
+}
+
 .logo {
     margin-bottom: 10px; 
 }
@@ -198,16 +226,6 @@ body {
     padding-bottom: 0px;
 }
 
-.header:after {
-
-    content: '';
-    display: block;
-    width: 3000px;
-    margin-left: -900px; 
-    height: 1.5px;
-    background: gray;
-
-}
 .menu {
     margin-top: 15px;
     font-size: 20pt;
@@ -309,6 +327,18 @@ body {
 }
 .trabalhista {
     background-image: url("../../assets/images/index/pericia-trabalhista-bg.png");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.contabil {
+    background-image: url("../../assets/images/index/pericia-contabil-bg.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.financeira {
+    background-image: url("../../assets/images/index/pericia-financeira-bg.jpg");
     background-repeat: repeat;
     background-size: cover;
 }

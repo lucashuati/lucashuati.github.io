@@ -44,7 +44,8 @@
     /*border: 1px solid black;*/
     position: absolute;
     width: 354px;
-    top: -40px;
+    top: -35px;
+    margin-left: 15px;
 }
 
 .tipo-per h2{
@@ -94,4 +95,19 @@
 .rec p{
     font-size: 16pt; 
      font-weight: 300;   
+}
+
+.atalho-contato h3, .atalho-contato h2{
+    text-align: center;
+}
+.atalho-contato h2{
+    margin-bottom: 0px;
+}
+
+.atalho-contato h3{
+    margin: 0px;
+}
+
+.but-contato {
+    padding-left: 35px; 
 }

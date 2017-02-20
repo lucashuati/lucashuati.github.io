@@ -1,13 +1,10 @@
-Painel Principal
-    historia - bh
-    pericia - reunião contabil
-    consultoria - consultoria, mao dadas 
-    
-
-
-financeira - calculadora + caneta
-contabil - audtoria contabil, numeros, sem lupa
+financeira - calculadora + caneta ok
+contabil - audtoria contabil, numeros, sem lupa ok
 
 valuation - grafico, reuniao de crescimento
 consultoria - contrato aprerto de mãos, reunião(formal) 
 recuperação financeira - demonstração com clientes, tablet, notebook, calculadora
+
+hospedagem teste
+jwpericia
+d^g%%lIA&J#UQGZ!n3MV
