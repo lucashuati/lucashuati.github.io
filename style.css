@@ -1,0 +1,229 @@
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("/fonts/instrument-sans.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+  --paper: #f2f5fa;
+  --ink: #182642;
+  --quiet: #4e5b70;
+  --navy: #17294c;
+  --sky: #94baff;
+  --line: #c3ccdc;
+  --font: "Instrument Sans", system-ui, sans-serif;
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--paper);
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; }
+
+.shell {
+  width: min(100% - 2.5rem, 72rem);
+  margin-inline: auto;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: .22em;
+}
+
+a:focus-visible {
+  outline: .2rem solid #2b5fb8;
+  outline-offset: .28rem;
+}
+
+.top,
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.4rem;
+}
+
+.top nav,
+.footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem 1.6rem;
+}
+
+.site-name {
+  font-weight: 700;
+  letter-spacing: -.03em;
+}
+
+.top a,
+.footer a {
+  text-decoration: none;
+}
+
+.top a:hover,
+.top a[aria-current],
+.footer a:hover,
+.footer a[aria-current] {
+  text-decoration: underline;
+}
+
+.intro {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 28rem;
+  display: flex;
+  align-items: end;
+  color: white;
+  background: var(--navy);
+  padding: clamp(1.75rem, 5vw, 5rem);
+}
+
+.intro-content { max-width: 38rem; }
+
+.intro h1 {
+  margin: 0 0 1.05rem;
+  font-size: clamp(4.3rem, 10vw, 8.2rem);
+  font-weight: 680;
+  line-height: .83;
+  letter-spacing: -.09em;
+}
+
+.intro p {
+  max-width: 33ch;
+  margin: 0;
+  font-size: clamp(1.03rem, 2vw, 1.25rem);
+  line-height: 1.5;
+  color: #e1eaff;
+}
+
+.motif {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  color: var(--sky);
+  opacity: .75;
+  pointer-events: none;
+}
+
+.motif::before,
+.motif::after {
+  content: "";
+  position: absolute;
+  width: 68%;
+  aspect-ratio: 1;
+  border: 1px solid currentColor;
+  transform: rotate(22deg);
+}
+
+.motif::before { inset: 8% -4% auto auto; }
+
+.motif::after {
+  inset: 27% 18% auto auto;
+  background: #294678;
+  mix-blend-mode: screen;
+}
+
+.projects,
+.detail {
+  padding-block: 2.6rem 3.5rem;
+}
+
+.projects h2,
+.detail h2 {
+  margin: 0 0 1.2rem;
+  font-size: 1.2rem;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.5rem 0;
+  border-block: 1px solid var(--line);
+  text-decoration: none;
+}
+
+.project:hover .project-link,
+.project:hover strong { text-decoration: underline; }
+
+.project-copy {
+  display: grid;
+  gap: .5rem;
+}
+
+.project-copy strong {
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: -.05em;
+}
+
+.project-copy > span { color: var(--quiet); }
+
+.project-link {
+  flex-shrink: 0;
+  font-weight: 650;
+}
+
+.intro-project { min-height: 24rem; }
+
+.detail {
+  display: grid;
+  grid-template-columns: minmax(10rem, 1fr) minmax(0, 2fr);
+  gap: 0 1.5rem;
+}
+
+.policy { padding-block: 2rem 3.25rem; }
+
+.prose {
+  max-width: 67ch;
+  color: var(--quiet);
+  line-height: 1.62;
+}
+
+.prose p { margin: 0 0 1.3rem; }
+.prose p:last-child { margin-bottom: 0; }
+
+.prose h1,
+.prose h2 {
+  line-height: 1.06;
+  color: var(--ink);
+  letter-spacing: -.04em;
+}
+
+.prose h1 {
+  margin: 1.2rem 0;
+  font-size: clamp(2.35rem, 6vw, 4.5rem);
+}
+
+.prose h2 {
+  margin: 2rem 0 .65rem;
+  font-size: 1.35rem;
+}
+
+.prose a { overflow-wrap: anywhere; }
+
+.footer {
+  border-top: 1px solid var(--line);
+  color: var(--quiet);
+  font-size: .94rem;
+}
+
+@media (max-width: 39rem) {
+  .shell { width: calc(100% - 1.5rem); }
+  .intro { min-height: 24rem; }
+  .intro-project { min-height: 19rem; }
+  .motif { width: 62%; opacity: .4; }
+  .project, .detail { display: grid; }
+}
