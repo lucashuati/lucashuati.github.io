@@ -93,7 +93,7 @@ a:focus-visible {
   font-size: clamp(4.3rem, 10vw, 8.2rem);
   font-weight: 680;
   line-height: .83;
-  letter-spacing: -.09em;
+  letter-spacing: -.075em;
 }
 
 .intro p {
@@ -225,5 +225,6 @@ a:focus-visible {
   .intro { min-height: 24rem; }
   .intro-project { min-height: 19rem; }
   .motif { width: 62%; opacity: .4; }
-  .project, .detail { display: grid; }
+  .project { display: grid; }
+  .detail { grid-template-columns: minmax(0, 1fr); }
 }
